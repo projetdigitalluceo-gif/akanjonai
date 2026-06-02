@@ -1,0 +1,14 @@
+# Deploy artifact (rebuild with the zip script if needed)
+akanjonai-site.zip
+
+# Local editor / tooling config
+.claude/
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+.DS_Store
+Desktop.ini
+
+# Node (in case you add tooling later)
+node_modules/
