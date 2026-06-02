@@ -2,8 +2,9 @@
 [build]
   publish = "."
 
-# Long-cache the static assets (images, fonts) for performance.
+# Images can be updated under the same filename, so always revalidate
+# (ETag-based: fast 304 when unchanged, fresh image when it changes).
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=0, must-revalidate"
