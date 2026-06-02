@@ -556,17 +556,21 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .card .imgs.gpt-dark { background: #0d3a2c; }
 .card .imgs .pose {
   position: relative;
-  aspect-ratio: 1/1.08;
+  aspect-ratio: 1/1.05;
   display: grid;
   place-items: center;
-  padding: 22px 12px 26px;
+  padding: 12px 8px 18px;
+  overflow: hidden;
 }
 .card .imgs .pose img {
   width: 100%; height: 100%;
   object-fit: contain;
   transform: translateZ(30px);
   filter: drop-shadow(0 16px 24px rgba(0,0,0,0.4));
+  transition: transform .5s var(--ease2);
 }
+/* zoom on hover */
+.card:hover .imgs .pose img { transform: translateZ(30px) scale(1.13); }
 .card .imgs.light .pose img,
 .card .imgs.cream .pose img { filter: drop-shadow(0 16px 20px rgba(0,0,0,0.18)); }
 .card .imgs .pose .t {

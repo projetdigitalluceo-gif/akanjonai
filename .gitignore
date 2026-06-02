@@ -4,6 +4,9 @@ akanjonai-site.zip
 # Local editor / tooling config
 .claude/
 
+# Temp image review folder
+_review/
+
 # OS junk
 Thumbs.db
 ehthumbs.db
