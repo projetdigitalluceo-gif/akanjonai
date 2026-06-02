@@ -534,3 +534,43 @@ if (canHover && !reduceMotion) {
     start();
   }
 })();
+
+/* ---- Lookbook lightbox ---- */
+(() => {
+  const items = [...document.querySelectorAll('.lb-item')];
+  const lb = document.getElementById('lightbox');
+  if (!items.length || !lb) return;
+  const img = document.getElementById('lbImg');
+  const counter = document.getElementById('lbCounter');
+  const srcs = items.map(b => b.querySelector('img').getAttribute('src'));
+  const alts = items.map(b => b.querySelector('img').getAttribute('alt') || '');
+  let idx = 0;
+  const show = (i) => {
+    idx = (i + srcs.length) % srcs.length;
+    img.src = srcs[idx];
+    img.alt = alts[idx];
+    if (counter) counter.textContent = (idx + 1) + ' / ' + srcs.length;
+  };
+  const open = (i) => {
+    show(i);
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+  const close = () => {
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+  items.forEach((b, i) => b.addEventListener('click', () => open(i)));
+  document.getElementById('lbClose').addEventListener('click', close);
+  document.getElementById('lbPrev').addEventListener('click', (e) => { e.stopPropagation(); show(idx - 1); });
+  document.getElementById('lbNext').addEventListener('click', (e) => { e.stopPropagation(); show(idx + 1); });
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') show(idx - 1);
+    else if (e.key === 'ArrowRight') show(idx + 1);
+  });
+})();

@@ -47,6 +47,8 @@ const EN = {
   'chip.all': 'All',
   'pose.front': 'Front',
   'pose.back': 'Back',
+  'lookbook.kicker': 'In action',
+  'lookbook.title': 'The <span class="muted">lookbook.</span>',
 
   'ref.cld-ts-01': '<span class="pin"></span>CLD-TS-01 · White',
   'ref.cld-ts-02': '<span class="pin"></span>CLD-TS-02 · Cream',
@@ -163,6 +165,8 @@ const MG = {
   'chip.all': 'Rehetra',
   'pose.front': 'Aloha',
   'pose.back': 'Aoriana',
+  'lookbook.kicker': 'An-tsehatra',
+  'lookbook.title': 'Ny <span class="muted">lookbook.</span>',
 
   'ref.cld-ts-01': '<span class="pin"></span>CLD-TS-01 · Fotsy',
   'ref.cld-ts-02': '<span class="pin"></span>CLD-TS-02 · Krema',

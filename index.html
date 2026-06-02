@@ -70,6 +70,7 @@
     <a href="#claude">Claude</a>
     <a href="#chatgpt">ChatGPT</a>
     <a href="#shop" data-i18n="nav.shop">Boutique</a>
+    <a href="#lookbook" data-i18n="nav.lookbook">Lookbook</a>
     <a href="#tech" data-i18n="nav.workshop">Atelier</a>
     <a href="catalogue-akanjonai-2026.pdf" download="Catalogue Akanjon'Ai 2026.pdf" data-i18n="nav.catalog">Catalogue</a>
     <a href="#order" class="menu-cta" data-i18n="nav.order">Commander</a>
@@ -218,6 +219,27 @@
         <span class="range-link" data-i18n-html="range.link">Découvrir <span class="arr">→</span></span>
       </div>
     </a>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- LOOKBOOK                                                     -->
+<!-- ============================================================ -->
+<section class="section" id="lookbook">
+  <div class="sec-head reveal">
+    <div class="k" data-i18n="lookbook.kicker">En situation</div>
+    <h2 class="reveal-mask" data-i18n-html="lookbook.title">Le <span class="muted">lookbook.</span></h2>
+  </div>
+  <div class="lookbook-grid">
+    <button class="lb-item reveal" type="button"><img src="assets/lookbook/lb1.jpg" alt="Akanjon'Ai — lookbook 1" loading="lazy" decoding="async"></button>
+    <button class="lb-item reveal d1" type="button"><img src="assets/lookbook/lb2.jpg" alt="Akanjon'Ai — lookbook 2" loading="lazy" decoding="async"></button>
+    <button class="lb-item reveal d2" type="button"><img src="assets/lookbook/lb3.jpg" alt="Akanjon'Ai — lookbook 3" loading="lazy" decoding="async"></button>
+    <button class="lb-item reveal" type="button"><img src="assets/lookbook/lb4.jpg" alt="Akanjon'Ai — lookbook 4" loading="lazy" decoding="async"></button>
+    <button class="lb-item reveal d1" type="button"><img src="assets/lookbook/lb5.jpg" alt="Akanjon'Ai — lookbook 5" loading="lazy" decoding="async"></button>
+    <button class="lb-item reveal d2" type="button"><img src="assets/lookbook/lb6.jpg" alt="Akanjon'Ai — lookbook 6" loading="lazy" decoding="async"></button>
+    <button class="lb-item reveal" type="button"><img src="assets/lookbook/lb7.jpg" alt="Akanjon'Ai — lookbook 7" loading="lazy" decoding="async"></button>
+    <button class="lb-item reveal d1" type="button"><img src="assets/lookbook/lb8.jpg" alt="Akanjon'Ai — lookbook 8" loading="lazy" decoding="async"></button>
+    <button class="lb-item reveal d2" type="button"><img src="assets/lookbook/lb9.jpg" alt="Akanjon'Ai — lookbook 9" loading="lazy" decoding="async"></button>
   </div>
 </section>
 
@@ -620,6 +642,23 @@
     </div>
   </div>
 </footer>
+
+<!-- ============================================================ -->
+<!-- LIGHTBOX (lookbook viewer)                                   -->
+<!-- ============================================================ -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Galerie lookbook">
+  <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Fermer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lb-btn lb-prev" id="lbPrev" type="button" aria-label="Précédent">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <img class="lb-img" id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext" type="button" aria-label="Suivant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+  <div class="lb-counter" id="lbCounter"></div>
+</div>
 
 <script src="i18n.js"></script>
 <script src="vitrine3d.js"></script>
