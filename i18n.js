@@ -33,12 +33,12 @@ const EN = {
   'range1.desc': 'A love letter to your assistant, worn in combed cotton.',
   'range1.meta1': 'Pieces<strong>5 visuals</strong>',
   'range1.meta2': 'Colors<strong>White · Cream · Black</strong>',
-  'range1.meta3': 'From<strong>24 000 Ar</strong>',
+  'range1.meta3': 'From<strong>25 000 Ar</strong>',
   'range2.line': 'Range 02',
   'range2.desc': 'From minimal premium to streetwear — AI gets stylish.',
   'range2.meta1': 'Pieces<strong>6 visuals</strong>',
   'range2.meta2': 'Colors<strong>White · Black · Green</strong>',
-  'range2.meta3': 'From<strong>24 000 Ar</strong>',
+  'range2.meta3': 'From<strong>25 000 Ar</strong>',
   'range.link': 'Discover <span class="arr">→</span>',
 
   // Shop
@@ -151,12 +151,12 @@ const MG = {
   'range1.desc': "Taratasy fitiavana ho an'ny mpanampy anao, amin'ny landihazo voafantina.",
   'range1.meta1': 'Singa<strong>Sary 5</strong>',
   'range1.meta2': 'Loko<strong>Fotsy · Krema · Mainty</strong>',
-  'range1.meta3': 'Manomboka<strong>24 000 Ar</strong>',
+  'range1.meta3': 'Manomboka<strong>25 000 Ar</strong>',
   'range2.line': 'Andiany 02',
   'range2.desc': "Avy amin'ny minimal premium ka hatramin'ny streetwear — manjary kanto ny IA.",
   'range2.meta1': 'Singa<strong>Sary 6</strong>',
   'range2.meta2': 'Loko<strong>Fotsy · Mainty · Maitso</strong>',
-  'range2.meta3': 'Manomboka<strong>24 000 Ar</strong>',
+  'range2.meta3': 'Manomboka<strong>25 000 Ar</strong>',
   'range.link': 'Hahafantatra <span class="arr">→</span>',
 
   // Shop
